@@ -154,6 +154,9 @@
 
     #cursor-circle {
       z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100px; /* Same size as the #star element */
       height: 100px;
       background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent white for contrast */
@@ -208,13 +211,13 @@
       <div class="core"></div>
     </div>
   </div>
-  <div id="cursor-circle"></div>
+  <div id="cursor-circle">&#11088;</div>
   <div id="score" style="color: white; position: absolute; top: 10px; left: 10px">
     <div id="count">Score: 0</div>
     <div id="planets"></div>
     <div id="win"></div>
   </div>
-  <div class="starText">&#11088;</div>
+  <!-- <div class="starText">&#11088;</div> -->
 
   <button id="homeButton">Go to Home Page</button>
 
