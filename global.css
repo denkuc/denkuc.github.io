@@ -35,8 +35,10 @@
 
 .planet_label {
     position: absolute;
-    bottom: -10%;
+    bottom: -0%;
     left: 50%;
+    min-width: 150px;
+    text-align: center;
     transform: translateX(-50%);
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 16px;  /* Adjust size for medium preference */
@@ -46,4 +48,13 @@
 
 .planet:hover .planet_label {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+}
+
+.planet_label_icon {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 27px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
