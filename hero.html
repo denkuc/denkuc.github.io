@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="global.css">
+    <style>
+
+        .planet {
+            transform: translateY(-50%);
+        }
+
+        .planet:hover {
+            animation: pulse 2s infinite;
+        }
+
+        .planet:after {
+            content: '';
+            position: absolute;
+            border: 2px dashed #fff; /* Dashed border for the orbit */
+            border-radius: 50%; /* Make it circular */
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .planet1:after {
+            width: 400px; /* Diameter of the orbit */
+            height: 400px;
+            top: -146%;
+            left: -110%;/* Diameter of the orbit */
+        }
+
+        .planet2:after {
+            width: 600px; /* Diameter of the orbit */
+            height: 600px;
+            top: -350%;
+            left: -350%;/* Diameter of the orbit */
+        }
+
+        .planet3:after {
+            width: 1000px;
+            height: 1000px;
+            top: -450%;
+            left: -900%;
+        }
+
+        .planet4:after {
+            width: 2000px;
+            height: 2000px;
+            top: -800%;
+            left: -900%;
+        }
+
+        .planet5:after {
+            width: 3000px;
+            height: 3000px;
+            top: -1700%;
+            left: -2615%;
+        }
+
+        .planet6:after {
+            width: 4000px; /* Diameter of the orbit */
+            height: 4000px;
+            top: -2100%;
+            left: -1760%;/* Diameter of the orbit */
+        }
+
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 30px rgba(255, 255, 255, 0.5),
+                0 0 60px rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 50px rgba(255, 255, 255, 0.7),
+                0 0 100px rgba(255, 255, 255, 0.5);
+            }
+        }
+    </style>
+</head>
+<body class="hero-body">
+<main class="hero-bg">
+    <a class="planet planet1" style="top: 35%; left: 10%;" href="/take-a-photo/1.html">
+        <img src="./images/planet_comics_1.png" alt="Link to comics 1" />
+    </a>
+    <a class="planet planet2" style="top: 45%; left: 30%;" href="/game_photo.html">
+        <img src="./images/planet_game_1.png" alt="Link to game 1"/>
+    </a>
+    <a class="planet planet3" style="top: 22%; left: 50%;" href="/dancing-star/1.html">
+        <img src="./images/planet_comics_2.png" alt="Link to comics 2" />
+    </a>
+    <a class="planet planet4" style="top: 80%; left: 45%;" href="/game2">
+        <img src="./images/planet_game_2.png" alt="Link to game 2" />
+    </a>
+    <a class="planet planet5" style="top: 40%; left: 70%;" href="/hide-n-seek/1.html">
+        <img src="./images/planet_comics_3.png" alt="Link to comics 3" />
+    </a>
+    <a class="planet planet6" style="top: 90%; left: 85%;" href="/game3">
+        <img src="./images/planet_game_3.png" alt="Link to game 3" />
+    </a>
+    <script src="./select-hero.js"></script>
+</main>
+</body>
+</html>
