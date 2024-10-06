@@ -27,6 +27,22 @@
       animation: pulse 1s infinite alternate; /* Pulsating animation */
     }
 
+    #homeButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+      z-index: 2000;
+    }
+
     .starText {
       z-index: 1000;
       position: absolute;
@@ -200,6 +216,8 @@
   </div>
   <div class="starText">&#11088;</div>
 
+  <button id="homeButton">Go to Home Page</button>
+
   <script defer type="text/javascript">
     let isFollow = true
     let firstClick = true
@@ -292,14 +310,23 @@
           planetsSelected[i + 1] = true
         }
         score = Object.values(planetsSelected).filter(Boolean).length * 10
-        const displayText = `` 
+        const displayText = ``
         + (planetsSelected[1] ? '\nMercury Found! Its color is red!' : '')
         + (planetsSelected[2] ? '\nVenus Found! Its color is yellow!' : '')
         + (planetsSelected[3] ? '\nEarth Found! Its color is blue!' : '')
         document.getElementById('count').innerText = `Score: ${score}`
         document.getElementById('planets').innerText = displayText
-        document.getElementById('win').innerText = score === 30 ? 'You win!' : ''
+
+        if (score === 30) {
+          document.getElementById('win').innerText = 'You win!'
+          document.getElementById('homeButton').style.display = 'block'
+        }
       })
+    })
+        // Add event listener for the home button
+        document.getElementById('homeButton').addEventListener('click', () => {
+      // Replace this with the actual URL of your home page
+      window.location.href = '/home'
     })
   </script>
 </body>
