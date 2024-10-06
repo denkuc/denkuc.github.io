@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Fun, playful font */
+    background-color: #2b2d42;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff6b6b;
+    text-shadow: 2px 2px #ffcc00;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #ffcc00;
+}
+
+.planet-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.planet-card {
+    background-color: #3a86ff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border: 4px solid #ffcc00;
+}
+
+.planet-card:hover {
+    transform: scale(1.1);
+    background-color: #ff6b6b;
+}
+
+.planet-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #fff100;
+    text-shadow: 1px 1px #333;
+    margin: 15px 0;
+}
+
+.planet-description {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #ffeb3b;
+    text-shadow: 1px 1px #333;
+}
+
+.select-btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.select-btn:hover {
+    background-color: #fff100;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #ffcc00;
+    font-size: 1rem;
+}
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Choose Your Planet</h1>
+        <p>Select your character's planet to start your exoplanet exploration!</p>
+    </header>
+
+    <section class="planet-selection">
+        <div class="planet-card">
+            <h2>Terrestrial</h2>
+            <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/terrestrial-list.webp" alt="Terrestrial Planet" class="planet-image">
+          <p class="planet-description">Meet the mighty <b>Terrestrial</b>! This planet type can host life if it's in the right place, just like Earth!<br><br>Superpower: Life Supporter! 🌱</p>
+            <button class="select-btn">Choose Terrestrial</button>
+        </div>
+        <div class="planet-card">
+            <h2>Super-Earth</h2>
+            <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/gj-15-a-b-list.webp" alt="Super-Earth Planet" class="planet-image">
+          <p class="planet-description">Bigger and stronger than regular Earths, <b>Super-Earths</b> have muscles of rock and can support life if you're lucky!<br><br>Superpower: Ultimate Survivalist! 🌍💪</p>
+            <button class="select-btn">Choose Super-Earth</button>
+        </div>
+        <div class="planet-card">
+            <h2>Gas Giant</h2>
+            <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/kepler-16-b-list.webp" alt="Gas Giant Planet" class="planet-image">
+           <p class="planet-description">Meet the <b>Gas Giant</b> – super big, super strong, and full of gas! With storms that rage for centuries, it's the king of the cosmos!<br><br>Superpower: Galactic Stormbringer! 🌪️👑</p>
+            <button class="select-btn">Choose Gas Giant</button>
+        </div>
+        <div class="planet-card">
+            <h2>Neptune-Like</h2>
+            <img src="https://eyes.nasa.gov/apps/exo/assets/image/thumbnail/exoplanet/au-mic-b-list.webp" alt="Neptune-Like Planet" class="planet-image">
+          <p class="planet-description">Freezing cold and far away, the <b>Neptune-Like</b> planets are icy giants with powerful winds!<br><br>Superpower: Icy Windmaster! ❄️💨</p>
+            <button class="select-btn">Choose Neptune-Like</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ExoPlaid | STEM Platform</p>
+    </footer>
+</body>
+</html>
