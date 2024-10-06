@@ -32,3 +32,18 @@
     transform: translate(-55%, -55%);
     z-index: 100;
 }
+
+.planet_label {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 16px;  /* Adjust size for medium preference */
+    color: white;     /* White letters */
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.planet:hover .planet_label {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+}

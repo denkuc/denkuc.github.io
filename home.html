@@ -20,52 +20,52 @@
             content: '';
             position: absolute;
             border: 2px dashed #fff; /* Dashed border for the orbit */
-            border-radius: 50%; /* Make it circular */
+            border-radius: 80% / 100%; /* Make it circular */
             z-index: -1;
             pointer-events: none;
         }
 
         .planet1:after {
-            width: 400px; /* Diameter of the orbit */
-            height: 400px;
-            top: -146%;
-            left: -110%;/* Diameter of the orbit */
+            width: 700px;
+            height: 700px;
+            top: -318%;
+            left: -164%;
         }
 
         .planet2:after {
-            width: 600px; /* Diameter of the orbit */
-            height: 600px;
-            top: -350%;
-            left: -350%;/* Diameter of the orbit */
+            width: 1100px;
+            height: 1100px;
+            top: -656%;
+            left: -700%;
         }
 
         .planet3:after {
-            width: 1000px;
-            height: 1000px;
+            width: 2000px;
+            height: 2000px;
             top: -450%;
             left: -900%;
         }
 
-        .planet4:after {
-            width: 2000px;
-            height: 2000px;
-            top: -800%;
-            left: -900%;
-        }
+        /*.planet4:after {*/
+        /*    width: 2000px;*/
+        /*    height: 2000px;*/
+        /*    top: -800%;*/
+        /*    left: -900%;*/
+        /*}*/
 
-        .planet5:after {
-            width: 3000px;
-            height: 3000px;
-            top: -1700%;
-            left: -2615%;
-        }
+        /*.planet5:after {*/
+        /*    width: 3000px;*/
+        /*    height: 3000px;*/
+        /*    top: -1700%;*/
+        /*    left: -2615%;*/
+        /*}*/
 
-        .planet6:after {
-            width: 4000px; /* Diameter of the orbit */
-            height: 4000px;
-            top: -2100%;
-            left: -1760%;/* Diameter of the orbit */
-        }
+        /*.planet6:after {*/
+        /*    width: 4000px; !* Diameter of the orbit *!*/
+        /*    height: 4000px;*/
+        /*    top: -2100%;*/
+        /*    left: -1760%;!* Diameter of the orbit *!*/
+        /*}*/
 
 
         @keyframes pulse {
@@ -83,23 +83,29 @@
 <body class="hero-body">
 <img class="header-star" src="images/star.png" />
 <main class="hero-bg">
-    <a class="planet planet1" style="top: 35%; left: 10%;" href="/take-a-photo/1.html">
+    <a class="planet planet1" style="top: 50%; left: 5%;" href="/take-a-photo/1.html">
         <img src="./images/planet_comics_1.png" alt="Link to comics 1" />
+        <span class="planet_label">1. Learn "Direct Imaging"</span>
     </a>
-    <a class="planet planet2" style="top: 45%; left: 30%;" href="/game_photo.html">
+    <a class="planet planet2" style="top: 55%; left: 35%;" href="/game_photo.html">
         <img src="./images/planet_game_1.png" alt="Link to game 1"/>
+        <span class="planet_label">2. Play "Take a Photo"</span>
     </a>
-    <a class="planet planet3" style="top: 22%; left: 50%;" href="/dancing-star/1.html">
+    <a class="planet planet3" style="top: 22%; left: 60%;" href="/dancing-star/1.html">
         <img src="./images/planet_comics_2.png" alt="Link to comics 2" />
+        <span class="planet_label">3. Learn "Radial Velocity"</span>
     </a>
     <a class="planet planet4" style="top: 80%; left: 45%;" href="/game_dance.html">
         <img src="./images/planet_game_2.png" alt="Link to game 2" />
+        <span class="planet_label">4. Play "Dancing Star"</span>
     </a>
     <a class="planet planet5" style="top: 40%; left: 70%;" href="/hide-n-seek/1.html">
         <img src="./images/planet_comics_3.png" alt="Link to comics 3" />
+        <span class="planet_label">5. Learn "Transit"</span>
     </a>
     <a class="planet planet6" style="top: 90%; left: 85%;" href="/game3">
         <img src="./images/planet_game_3.png" alt="Link to game 3" />
+        <span class="planet_label">6.Play "Hide and Seek"</span>
     </a>
     <script src="./select-hero.js"></script>
 </main>
