@@ -27,6 +27,37 @@
       /* animation: pulse 36s linear infinite; */
     }
 
+    #homeButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+      z-index: 2000;
+    }
+
+    #nextRoundButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+      z-index: 2000;
+    }
     .starText {
       z-index: 1000;
       position: absolute;
@@ -306,6 +337,8 @@
     </div>
   </div>
 
+  <button id="homeButton">Go to Home Page</button>
+
   <script defer type="text/javascript">
     let currentRound = 0
     const quizzRound = {
@@ -318,12 +351,6 @@
       0: 0,
       1: 1,
       2: 3
-    }
-
-    const starColors = {
-      0: 'orange',
-      1: 'yellow',
-      2: 'red'
     }
 
     const star = document.getElementById('star')
@@ -367,5 +394,11 @@
         littleStar.style.opacity = 0
       })
     }
+
+    // Add event listener for the home button
+    document.getElementById('homeButton').addEventListener('click', () => {
+      // Replace this with the actual URL of your home page
+      window.location.href = '/home'
+    })
   </script>
 </body>
