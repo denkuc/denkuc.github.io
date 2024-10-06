@@ -1,0 +1,14 @@
+.hero-bg {
+    overflow: hidden;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    position: relative;
+    background-image: url("./images/hero-bg.jpg");
+}
+
+.hero-bg a {
+    position: absolute;
+    z-index: 10;
+}
