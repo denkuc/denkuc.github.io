@@ -44,7 +44,7 @@ function handleHeroSelect() {
             break;
         }
     }
-    window.location.assign('hero.html');
+    window.location.assign('home.html');
 }
 
 selectButtons.forEach(button => {
